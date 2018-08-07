@@ -19,5 +19,14 @@ public class CountStudents {
             array[i] = sc.nextInt();
             i++;
         }
+
+        int count = 0;
+        System.out.println("List of mark: ");
+        for (int j = 0; j < array.length; j++) {
+            System.out.println("Mark of student " + (j + 1) + " is: " + array[j]);
+            if (array[j] >= 5 && array[j] <= 10)
+                count++;
+        }
+        System.out.println("We have " + count + " students pass the exam");
     }
 }
