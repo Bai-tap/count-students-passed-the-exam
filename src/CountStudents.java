@@ -12,5 +12,13 @@ public class CountStudents {
                 System.out.println("Size should not exceed 30");
             }
         } while (size > 30);
+
+        array = new int[size];
+        int i = 0;
+        while (i < array.length) {
+            System.out.print("Enter mark of student: " + (i + 1) + " : ");
+            array[i] = sc.nextInt();
+            i++;
+        }
     }
 }
