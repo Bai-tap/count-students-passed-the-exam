@@ -8,15 +8,14 @@ public class CountStudents {
         do {
             System.out.print("Enter number of students: ");
             size = sc.nextInt();
-            if (size > 30) {
-                System.out.println("Size should not exceed 30");
-            }
+            if (size > 30)
+                System.out.println("Number should not exceed 30");
         } while (size > 30);
 
         array = new int[size];
         int i = 0;
         while (i < array.length) {
-            System.out.print("Enter mark of student: " + (i + 1) + " : ");
+            System.out.print("Enter mark of student " + (i + 1) + " : ");
             array[i] = sc.nextInt();
             i++;
         }
